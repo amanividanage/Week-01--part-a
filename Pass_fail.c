@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-// Checking wether pass or fail
+// Checking whether pass or fail
 
 int main(){
 	
