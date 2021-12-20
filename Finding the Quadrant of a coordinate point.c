@@ -1,23 +1,57 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// A program to determine the quadrant when the coordinates of a point are given
+// A program that recieves a number representing a month(1-12) and prints the month name
 
 int main(){
     
-    int x,y;
-    printf("Enter the coordinates of the point :");
-    scanf("%d %d", &x,&y);
+    int month_number;
+    printf("Enter the number of the month :");
+    scanf("%d", &month_number);
     
-    if( x>0 && y>0)
-      printf("First Quadrant");
-    else if (x<0 && y>0)  
-      printf("Second Quadrant");
-    else if (x<0 && y<0)  
-      printf("Third Quadrant");
-    else 
-	printf("Fourth Quadrant");  
- 
+    switch(month_number)
+{
+	case 1: 
+    	printf("January");
+	    break;
+	case 2: 
+    	printf("February");
+     	break;
+	case 3: 
+    	printf("March");
+    	break;
+	case 4: 
+    	printf("April");
+	    break;
+	case 5: 
+	    printf("May");
+	    break;
+	case 6: 
+    	printf("June");
+	    break;
+	case 7: 
+    	printf("July");
+	    break;
+	case 8: 
+	    printf("August");
+	    break;
+	case 9: 
+    	printf("September");
+	    break;
+	case 10: 
+    	printf("October");
+    	break;
+	case 11: 
+	    printf("November");
+    	break;
+	case 12: 
+     	printf("December");
+	    break;
+	default:
+	    printf("Error");
+	    break;
+}
+    
  
  return 0;
 }
